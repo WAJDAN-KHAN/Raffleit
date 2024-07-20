@@ -37,7 +37,9 @@ export const HowItWorks = () => {
                   />
                   <div className="md:max-w-[522px] w-full mx-auto max-w-full">
                     <h3 className="lato font-normal text-[16px] leading-[24px] text-[#0F4841]">HOW IT WORKS</h3>
-                    <h1 className="lato font-bold text-[36px] leading-[48px] text-[#111827] py-3">{section.title}</h1>
+                    <h1 className="lato font-bold  text-[28px] leading-1  md:text-[36px] md:leading-[48px] text-[#111827] py-3">
+                      {section.title}
+                    </h1>
                     <p className="lato font-normal text-[17px] leading-[28px] text-[#374151]">{section.text}</p>
                   </div>
                 </div>
@@ -58,7 +60,9 @@ export const HowItWorks = () => {
                 <div className="relative">
                   <div className="md:max-w-[522px] w-full mx-auto max-w-full">
                     <h3 className="lato font-normal text-[16px] leading-[24px] text-[#0F4841]">HOW IT WORKS</h3>
-                    <h1 className="lato font-bold text-[36px] leading-[48px] text-[#111827] py-3">{section.title}</h1>
+                    <h1 className="lato font-bold  text-[28px] leading-1  md:text-[36px] md:leading-[48px] text-[#111827] py-3">
+                      {section.title}
+                    </h1>
                     <p className="lato font-normal text-[17px] leading-[28px] text-[#374151]">{section.text}</p>
                   </div>
                 </div>
