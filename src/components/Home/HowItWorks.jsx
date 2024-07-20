@@ -48,7 +48,7 @@ export const HowItWorks = () => {
             ) : (
               <>
                 <div className="relative">
-                  <img src={section.imgSrc} className="max-w-full h-auto object-cover" alt="" />
+                  <img src={section.imgSrc} className="max-w-full h-auto object-cover mx-auto" alt="" />
                   <img
                     src="/assets/img/Star 2.png"
                     className={`absolute hidden md:block ${section.starPosition}`}
