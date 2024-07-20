@@ -30,7 +30,11 @@ export const HowItWorks = () => {
             {index % 2 === 0 ? (
               <>
                 <div className="relative">
-                  <img src="/assets/img/Star 2.png" className={`absolute right-0 ${section.starPosition}`} alt="" />
+                  <img
+                    src="/assets/img/Star 2.png"
+                    className={`absolute hidden md:block right-0 ${section.starPosition}`}
+                    alt=""
+                  />
                   <div className="md:max-w-[522px] w-full mx-auto max-w-full">
                     <h3 className="lato font-normal text-[16px] leading-[24px] text-[#0F4841]">HOW IT WORKS</h3>
                     <h1 className="lato font-bold text-[36px] leading-[48px] text-[#111827] py-3">{section.title}</h1>
@@ -45,7 +49,11 @@ export const HowItWorks = () => {
               <>
                 <div className="relative">
                   <img src={section.imgSrc} className="max-w-full h-auto object-cover" alt="" />
-                  <img src="/assets/img/Star 2.png" className={`absolute ${section.starPosition}`} alt="" />
+                  <img
+                    src="/assets/img/Star 2.png"
+                    className={`absolute hidden md:block ${section.starPosition}`}
+                    alt=""
+                  />
                 </div>
                 <div className="relative">
                   <div className="md:max-w-[522px] w-full mx-auto max-w-full">
