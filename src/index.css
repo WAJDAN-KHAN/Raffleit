@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font {
+  font-family: 'Mulish', sans-serif;
+}
+
+/* This is an inline style, you can also use an external stylesheet */
+.hover-underline-animation {
+  position: relative;
+}
+.poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+.neon {
+  font-family: 'Tilt Neon', sans-serif !important;
+}
+.sue {
+  font-family: 'Sue Ellen Francisco', sans-serif !important;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+.trebuchet {
+  font-family: 'Trebuchet MS', sans-serif !important;
+}
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust this value to control the distance of the underline from the text */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust this value to control the thickness of the underline */
+  background-color: #000; /* Change this to your desired underline color */
+  transition: width 0.3s ease-in-out; /* Control the animation speed here */
+}
+
+.hover-underline-animation:hover::after {
+  width: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  /* font-family: "helvetica", sans-serif; */
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  font-size: inherit;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bg-download {
+  background-image: url('../src//assets/Hero/hero-bg.svg');
+  background-color: black;
+  background-position: 100% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.btn-gradient {
+  color: #fbfbfd;
+  background: linear-gradient(95.14deg, #e52c43, #ff6c00 91.74%);
+}
+
+.GRID {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* column-gap: ; */
+}
+.transition-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.transition-content.expanded {
+  max-height: 1000px; /* Large enough value to accommodate the content */
+  opacity: 1;
+}
